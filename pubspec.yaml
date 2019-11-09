@@ -14,11 +14,11 @@ dependencies:
   flutter_staggered_grid_view:
   path:
   flutter_launcher_icons: ^0.7.0
-  firebase_core: ^0.4.0+1
-  firebase_admob: ^0.5.2
+#  firebase_core: ^0.4.0+1
+#  firebase_admob: ^0.5.2
   url_launcher: ^5.0.2
   share: ^0.6.1+1
-  simple_permissions: ^0.1.2
+  simple_permissions: ^0.1.9
 
 dev_dependencies:
   flutter_test:

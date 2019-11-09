@@ -58,7 +58,7 @@ android {
             keyPassword keystoreProperties['keyPassword']
             storeFile file(keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']
-        }   
+        }
     }
     buildTypes {
         release {
@@ -77,11 +77,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
-    api 'com.google.firebase:firebase-core:16.0.9'
-    api 'com.google.firebase:firebase-ads:16.0.1'
+//    api 'com.google.firebase:firebase-core:16.0.9'
+//    api 'com.google.firebase:firebase-ads:16.0.1'
 }
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 
-googleServices {
-    disableVersionCheck = true
-}
+//googleServices {
+//    disableVersionCheck = true
+//}

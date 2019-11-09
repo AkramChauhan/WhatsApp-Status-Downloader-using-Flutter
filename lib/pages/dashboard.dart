@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:status_download/pages/photos.dart';
 import 'package:status_download/pages/videos.dart';
-import 'package:firebase_admob/firebase_admob.dart';
+//import 'package:firebase_admob/firebase_admob.dart';
 
-const String testDevice = '';
+//const String testDevice = '';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -12,47 +12,47 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
 
-  static final MobileAdTargetingInfo targetInfo = new MobileAdTargetingInfo(
-    //testDevices: <String>[],
-    keywords: <String>['live chat','dating','bigo'],
-  );
+//  static final MobileAdTargetingInfo targetInfo = new MobileAdTargetingInfo(
+//    //testDevices: <String>[],
+//    keywords: <String>['live chat','dating','bigo'],
+//  );
 
-  BannerAd _bannerAd;
-  
-  BannerAd createBannerAd(){
-    return new BannerAd(
-      adUnitId: BannerAd.testAdUnitId,
-      size: AdSize.banner,
-      targetingInfo: targetInfo,
-      listener: (MobileAdEvent event){
-      }
-    );
-  }
+//  BannerAd _bannerAd;
+//
+//  BannerAd createBannerAd(){
+//    return new BannerAd(
+//      adUnitId: BannerAd.testAdUnitId,
+//      size: AdSize.banner,
+//      targetingInfo: targetInfo,
+//      listener: (MobileAdEvent event){
+//      }
+//    );
+//  }
 
-  InterstitialAd _interstitialAd;
-
-  InterstitialAd createInterstitialAd(){
-    return new InterstitialAd(
-        adUnitId: InterstitialAd.testAdUnitId,
-        targetingInfo: targetInfo,
-        listener: (MobileAdEvent event){
-        }
-    );
-  }
+//  InterstitialAd _interstitialAd;
+//
+//  InterstitialAd createInterstitialAd(){
+//    return new InterstitialAd(
+//        adUnitId: InterstitialAd.testAdUnitId,
+//        targetingInfo: targetInfo,
+//        listener: (MobileAdEvent event){
+//        }
+//    );
+//  }
 
   @override
   void initState() {
     super.initState();
-    FirebaseAdMob.instance.initialize(appId: YOUR_APP_ID);
-    _bannerAd = createBannerAd()
-    ..load()
-    ..show();
+//    FirebaseAdMob.instance.initialize(appId: YOUR_APP_ID);
+//    _bannerAd = createBannerAd()
+//    ..load()
+//    ..show();
   }
   
   @override
   void dispose(){
-    _bannerAd?.dispose();
-    _interstitialAd?.dispose();
+//    _bannerAd?.dispose();
+//    _interstitialAd?.dispose();
 
     super.dispose();
   }
@@ -91,9 +91,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ),
               child: InkWell(
                 onTap: (){
-                  createInterstitialAd()
-                    ..load()
-                    ..show();
+//                  createInterstitialAd()
+//                    ..load()
+//                    ..show();
                   Navigator.of(context).push( MaterialPageRoute(
                     builder: (BuildContext context) =>Photos(),
                   ));
@@ -142,9 +142,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ),
               child: InkWell(
                 onTap: (){
-                  createInterstitialAd()
-                    ..load()
-                    ..show();
+//                  createInterstitialAd()
+//                    ..load()
+//                    ..show();
                   Navigator.of(context).push( MaterialPageRoute(
                     builder: (BuildContext context) =>VideoListView(),
                   ));
