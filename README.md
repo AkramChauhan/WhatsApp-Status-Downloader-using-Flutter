@@ -6,7 +6,5 @@ This app is used to download whatsapp status photo and videos. you can upload th
 
 Show your supprt by giving star to this Repo as well as Follow me on Twitter & Instagram : @digitalchauhan
 
-Play Store URL : http://bit.ly/status-download
-
 Do you want to learn how it works? 
 Read my article for this : https://flutterian.com/whatsapp-status-downloader-using-flutter-with-admob/
