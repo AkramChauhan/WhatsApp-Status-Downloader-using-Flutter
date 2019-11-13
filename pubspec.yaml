@@ -16,9 +16,10 @@ dependencies:
   flutter_launcher_icons: ^0.7.0
 #  firebase_core: ^0.4.0+1
 #  firebase_admob: ^0.5.2
-  url_launcher: ^5.0.2
+  url_launcher: ^5.2.5
   share: ^0.6.1+1
   simple_permissions: ^0.1.9
+  image_gallery_saver: ^1.2.2
 
 dev_dependencies:
   flutter_test:

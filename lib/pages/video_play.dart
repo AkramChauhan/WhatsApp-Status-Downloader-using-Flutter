@@ -109,6 +109,7 @@ class _PlayStatusVideoState extends State<PlayStatusVideo> {
             ),), //`Text` to display
             onPressed: () async{
               _onLoading(true,"");
+
               File originalVideoFile = File(widget.videoFile);
               Directory directory = await getExternalStorageDirectory();
               if(!Directory("${directory.path}/Downloaded Status/Videos").existsSync()){
@@ -119,6 +120,7 @@ class _PlayStatusVideoState extends State<PlayStatusVideo> {
               String newFileName = "$path/Downloaded Status/Videos/VIDEO-$curDate.mp4";
               print(newFileName);
               await originalVideoFile.copy(newFileName);
+
               _onLoading(false,"If Video not available in gallary\n\nYou can find all videos at");
             },
           ),
