@@ -6,7 +6,7 @@ import 'package:image_gallery_saver/image_gallery_saver.dart';
 class ViewPhotos extends StatefulWidget {
   final String imgPath;
   ViewPhotos(this.imgPath);
-
+ 
   @override
   _ViewPhotosState createState() => _ViewPhotosState();
 }
