@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:status_download/pages/view_photo.dart';
+import 'package:status/pages/view_photo.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 final Directory _photoDir = new Directory('/storage/emulated/0/WhatsApp/Media/.Statuses');
@@ -36,7 +36,7 @@ class PhotosState extends State<Photos> {
       );
     }else {
       var imageList = _photoDir.listSync().map((item) => item.path).where((
-          item) => item.endsWith(".jpg")).toList(growable: false);
+          item) => item.endsWith(".jpeg") && item.endsWith(".jpg")).toList(growable: false);
 
       if (imageList.length > 0) {
         return Scaffold(
