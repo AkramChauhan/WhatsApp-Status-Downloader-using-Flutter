@@ -1,16 +1,10 @@
-# status
+# Status Downloader
 
-A new Flutter project.
+This app is used to download whatsapp status photo and videos. you can upload this app in playstore as well. there are lot's of application available like WhatsApp Story Saver, Story Downloader for whatsapp. 
 
-## Getting Started
+![Webp net-gifmaker (2)](https://user-images.githubusercontent.com/13075784/60452848-29403780-9c4d-11e9-9a73-4128b53a759f.gif)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Show your supprt by giving star to this Repo as well as Follow me on Twitter & Instagram : @digitalchauhan
+ 
+Do you want to learn how it works? 
+Read my article for this : https://flutterian.com/whatsapp-status-downloader-using-flutter-with-admob/
