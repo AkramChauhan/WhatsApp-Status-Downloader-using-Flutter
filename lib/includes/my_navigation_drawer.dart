@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class MyNavigationDrawer extends StatelessWidget {
   final _menutextcolor = TextStyle(
@@ -81,8 +81,8 @@ class MyNavigationDrawer extends StatelessWidget {
             Navigator.of(context).pop();
             // you can update this link with your app link
             const url = 'https://play.google.com/store/apps/details?id=com.aicosoft.status_download';
-            if (await canLaunch(url)) {
-              await launch(url);
+            if (await canLaunchUrlString(url)) {
+              await launchUrlString(url);
             } else {
               throw 'Could not open App';
             }
@@ -98,8 +98,8 @@ class MyNavigationDrawer extends StatelessWidget {
             Navigator.of(context).pop();
             // add privacy policy url
             const url = 'https://flutterian.com/privacy-policy/';
-            if (await canLaunch(url)) {
-              await launch(url);
+            if (await canLaunchUrlString(url)) {
+              await launchUrlString(url);
             } else {
               throw 'Could not open App';
             }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:status_download/pages/photos.dart';
-import 'package:status_download/pages/videos.dart';
+import 'package:status/pages/photos.dart';
+import 'package:status/pages/videos.dart';
 //import 'package:firebase_admob/firebase_admob.dart';
 
 //const String testDevice = '';
@@ -69,16 +69,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.purple[800],
-                    Colors.purple[700],
-                    Colors.purple[600],
-                    Colors.purple[500],
-                    Colors.purple[400],
-                    Colors.purple[800],
-                  ]
-                ),
+                color: Colors.purple,
                 borderRadius: BorderRadius.all(Radius.circular(3)),
                 boxShadow: [
                   BoxShadow(
@@ -120,16 +111,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.teal[800],
-                    Colors.teal[700],
-                    Colors.teal[600],
-                    Colors.teal[500],
-                    Colors.teal[400],
-                    Colors.teal[800],
-                  ]
-                ),
+                color: Colors.teal,
                 borderRadius: BorderRadius.all(Radius.circular(3)),
                 boxShadow: [
                   BoxShadow(
@@ -171,16 +153,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.indigo[800],
-                    Colors.indigo[700],
-                    Colors.indigo[600],
-                    Colors.indigo[500],
-                    Colors.indigo[600],
-                    Colors.indigo[800],
-                  ]
-                ),
+                color: Colors.indigo,
                 borderRadius: BorderRadius.all(Radius.circular(3)),
                 boxShadow: [
                   BoxShadow(

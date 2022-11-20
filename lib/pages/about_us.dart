@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class AboutScreen extends StatefulWidget {
   @override
@@ -16,8 +16,8 @@ class _AboutScreenState extends State<AboutScreen> {
   
   _launchURL() async {
     const url = 'https://flutterian.com';
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrlString(url)) {
+      await launchUrlString(url);
     } else {
       throw 'Could not open App';
     }
@@ -43,16 +43,7 @@ class _AboutScreenState extends State<AboutScreen> {
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Colors.teal[800],
-                      Colors.teal[700],
-                      Colors.teal[600],
-                      Colors.teal[500],
-                      Colors.teal[400],
-                      Colors.teal[800],
-                    ]
-                  ),
+                  color: Colors.teal,
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey,
